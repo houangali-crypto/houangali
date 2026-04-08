@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is the title that appears on the browser tab -->
+    <title>Alina | International Student Profile</title>
+    <style>
+        :root {
+            --sichuan-red: #C8102E; 
+            --laos-blue: #002868;
+            --white: #ffffff;
+            --soft-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--soft-gray);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background: var(--white);
+            width: 350px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .top-banner {
+            background: linear-gradient(45deg, var(--laos-blue), var(--sichuan-red));
+            height: 100px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 6px solid var(--white);
+            margin-top: -60px;
+            background-color: #eee;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px 25px 40px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            text-transform: capitalize;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .details {
+            text-align: left;
+        }
+
+        .data-row {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .label {
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: var(--sichuan-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .value {
+            font-size: 1rem;
+            display: block;
+            margin-top: 2px;
+        }
+
+        .btn-contact {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: var(--laos-blue);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-contact:hover {
+            transform: scale(1.05);
+            background-color: #001a45;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="top-banner"></div>
+        
+        <!-- Replace the placeholder URL below with your real photo link -->
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alina" alt="Houangvatthana Alina" class="profile-pic">
+        
+        <div class="content">
+            <h1>Houangvatthana Alina</h1>
+            <div class="subtitle">
+                <span>🇱🇦 Laos</span>
+                <span>•</span>
+                <span>🇨🇳 Sichuan</span>
+            </div>
+
+            <div class="details">
+                <div class="data-row">
+                    <span class="label">Education</span>
+                    <span class="value">International Student in Sichuan, China</span>
+                </div>
+
+                <div class="data-row">
+                    <span class="label">Birth Date</span>
+                    <span class="value">November 02, 2002</span>
+                </div>
+
+                <div class="data-row">
+                    <span class="label">Gender</span>
+                    <span class="value">Female</span>
+                </div>
+            </div>
+
+            <a href="mailto:your-email@example.com" class="btn-contact">Contact Me</a>
+        </div>
+    </div>
+
+</body>
+</html>
